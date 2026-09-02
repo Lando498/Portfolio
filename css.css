@@ -57,6 +57,7 @@
 }
 }
 #apps {
+  padding-top: 5vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -102,7 +103,7 @@
     bottom: 5px;
     left: 20px;
 
-    font-size: vw;
+    font-size: 2.5vw;
     font-family: 'MyCustomFont', sans-serif;
 
     color: rgba(15, 15, 15);
@@ -190,7 +191,7 @@
     bottom: 5px;
     left: 20px;
 
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-family: 'MyCustomFont', sans-serif;
 
     color: rgba(15, 15, 15);
@@ -201,7 +202,7 @@
 #OrganiserDesc {
     margin: 20px 20px 5px;
    font-family: 'MyCustomFont', sans-serif;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: white;
 
     mix-blend-mode: difference;
@@ -288,7 +289,7 @@
     bottom: 5px;
     left: 20px;
 
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-family: 'MyCustomFont', sans-serif;
 
     color: rgb(242, 242, 242);
@@ -299,7 +300,7 @@
 #IronManrDesc {
     margin: 20px 20px 5px;
     font-family: 'MyCustomFont', sans-serif;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: white;
 
     mix-blend-mode: difference;
@@ -415,7 +416,7 @@ a:hover {
 }
 
 #info {
-  margin-top: 5vh;
+  margin-top: 2.5vh;
   margin-bottom: 20vh;
   margin-right: 20vw;
   margin-left: 15vw;
@@ -423,11 +424,9 @@ a:hover {
   background-color: white;
   mix-blend-mode: difference;
   width: 70vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+  height: 300vh;
+  display: block;
 
-  flex-direction: row;
 }
 
 #titlehelmet {
@@ -436,4 +435,34 @@ a:hover {
     font-family: 'MyCustomFont', sans-serif;
     mix-blend-mode: difference;
     color: rgb(242, 242, 242);
+    position: relative;
+    text-align: center;
+}
+
+#back {
+width: 7.5vw;
+height: 7.5vw;
+position: absolute;
+}
+
+#backbutton {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 7.5vw;
+  height: 7.5vw;
+  position:absolute;
+}
+
+.container .fade-text {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.container:hover .fade-text {
+  opacity: 1;
+}
+#fadeetext {
+  text-align: center;
+  font-family: 'MyCustomFont', sans-serif;
 }
